@@ -1,16 +1,15 @@
 {
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Launch",
+			"name": "Launch Package",
 			"type": "go",
 			"request": "launch",
-			"mode": "debug",
-			"program": "${workspaceFolder}",
-			"buildFlags": "-ldflags='-s -w'",
-			"env": {
-				"GOARCH": "amd64" // или "amd64" для 64-битной Windows
-			}
+			"mode": "auto",
+			"program": "${workspaceFolder}/cmd/main.go"
 		}
 	]
 }
